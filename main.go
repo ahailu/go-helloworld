@@ -79,10 +79,10 @@ func main() {
 
 
     //// Web server: https://golang.org/doc/articles/wiki/
- 	// http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
- 	//    	fmt.Fprintf(w, "service path %s!", r.URL.Path[0:])
+ 	// 	http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
+ 	// 	   	fmt.Fprintf(w, "service path %s!", r.URL.Path[0:])
 	// })
- 	// http.ListenAndServe(":8080", nil)
+ 	// 	http.ListenAndServe(":8080", nil)
 	 
 }
 
