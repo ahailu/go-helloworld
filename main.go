@@ -63,4 +63,21 @@ func main() {
  	//	fmt.Println("validated key: ", value, ok)
 	// }
 	
+	//Functions
+	// m, n := f(7)
+	// fmt.Println("multiple val returned", m, n)
+	// fmt.Println("variadic 3 args", add(1,2,3))
+	// fmt.Println("variadic 4 args", add(1,2,3,4)) // func Println(a ...interface{}) (n int, err error)
 }
+
+// func f(m int) (int, int) {
+//   return m*5, m*6
+// }
+
+// func add(args ...int) int {
+//   total := 0
+//   for _, v := range args {
+//     total += v
+//   }
+//   return total
+// }
