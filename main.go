@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+// import "net/http"
 
 func main() {
     // Hello world
@@ -68,6 +69,21 @@ func main() {
 	// fmt.Println("multiple val returned", m, n)
 	// fmt.Println("variadic 3 args", add(1,2,3))
 	// fmt.Println("variadic 4 args", add(1,2,3,4)) // func Println(a ...interface{}) (n int, err error)
+
+
+	//// Structs + Object composition
+	// fmt.Println(person{firstName: "Alice", age: 30})
+	// fmt.Println(student{identity: person{firstName: "Dora", lastName: "The Explorer", age: 8}, grade: 3})
+	// s := student{identity: person{firstName: "Curious", lastName: "George", age: 7}, grade: 3}
+	// fmt.Println(s.identity.name())
+
+
+    //// Web server: https://golang.org/doc/articles/wiki/
+ 	// http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
+ 	//    	fmt.Fprintf(w, "service path %s!", r.URL.Path[0:])
+	// })
+ 	// http.ListenAndServe(":8080", nil)
+	 
 }
 
 // func f(m int) (int, int) {
@@ -81,3 +97,21 @@ func main() {
 //   }
 //   return total
 // }
+
+
+//// Structs + Object composition
+// type person struct {
+//     firstName string
+//     lastName string
+//     age  int
+// }
+
+// type student struct {
+//     identity person 
+//     grade int
+// }
+
+// func (p *person) name() string {
+// 	return p.firstName + " " + p.lastName
+// }
+
